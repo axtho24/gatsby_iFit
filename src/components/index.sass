@@ -1,0 +1,260 @@
+$layout-breakpoint-xl: 1661px
+$layout-breakpoint-lg: 1386px
+$layout-breakpoint-md: 1001px
+$layout-breakpoint-sm: 776px
+$layout-breakpoint-xs: 645px
+$layout-breakpoint-xxs: 538px
+$layout-breakpoint-xxxs: 458px
+$layout-breakpoint-footer: 992px
+
+
+.bodyContainer
+  padding: 0
+
+// NAVIGATION MENU ALTERATION
+.navMenu
+  font-weight: 600
+
+.nav-link:hover
+  cursor: pointer
+// NAVIGATION MENU ALTERATION
+
+// STYLES FOR SELECTED BUTTONS
+button
+    background-color: #0069d2 !important
+    font-weight: 600 !important
+
+button:hover
+  background-color: rgb(0, 73, 147) !important
+// STYLES FOR SELECTED BUTTONS
+
+// STYLES FOR MENU ON TOP OF NAVBAR
+.navTopper
+  p
+    font-weight: 600
+    margin: 7% 0
+
+  a
+    color: #7f7f7f !important
+
+  a:hover
+    color: rgba(0,0,0,.7) !important
+// STYLES FOR MENU ON TOP OF NAVBAR
+
+// HERO COVER AND TEXT
+.hero
+  width: 100% !important
+  background: black !important
+  position: absolute
+  left: 0
+  z-index: -1
+
+.heroCover
+  width: 100% !important
+  z-index: -1
+  opacity: 0
+  visibility: hidden
+
+.heroText
+  font-weight: 600
+  font-size: xxx-large
+  color: white
+  animation: fade-in 5s
+
+@keyframes fade-in
+  0%
+    opacity: 0
+    transform: scale(0)
+
+  100%
+    opacity: 1
+    transform: scale(1)
+
+
+
+
+.heroContainer
+  width: 35%
+  margin: auto
+  text-align: center
+  padding: 15% 0
+  .coach
+    width: 50%
+    margin: 5%
+// HERO COVER AND TEXT
+
+// MEDIA ALTERATIONS FOR HERO BACKGROUND AND TEXT (MOST TROUBLESOME PART OF THE PROJECT FOR ME)
+.fDLuQe
+  height: 100% !important
+
+@media (max-width: $layout-breakpoint-xl)
+  .heroContainer
+    width: 42%
+    padding: 13% 0
+
+@media (max-width: $layout-breakpoint-xl)
+  .heroContainer
+    width: 50%
+    padding: 10% 0
+
+@media (max-width: $layout-breakpoint-md)
+  .heroContainer
+    width: 46%
+    padding: 12% 0
+  .heroText
+    font-weight: 600
+    font-size: xx-large
+    color: white
+
+@media (max-width: $layout-breakpoint-sm)
+  .heroContainer
+    width: 45%
+    padding: 11% 0
+  .heroText
+    font-weight: 600
+    font-size: x-large
+    color: white
+
+@media (max-width: $layout-breakpoint-xs)
+  .heroContainer
+    width: 54%
+    padding: 9% 0
+
+@media (max-width: $layout-breakpoint-xxs)
+  .heroContainer
+    width: 64%
+    padding: 7% 0
+
+@media (max-width: $layout-breakpoint-xxxs)
+  .heroContainer
+    width: 65%
+    padding: 2% 0
+  .heroText
+    font-weight: 600
+    font-size: large
+    color: white
+// MEDIA ALTERATIONS FOR HERO BACKGROUND AND TEXT
+
+.reviewsCont
+  background-color: #f4f5f7
+  padding: 2% 0
+  div
+    padding: 2%
+    height: 10em !important
+  p
+    margin: 3% 0
+
+.buttonArrows
+  background-color: #000c28 !important
+  border-color: #000c28
+  opacity: 0.8
+  img
+    vertical-align: unset
+
+.trainerContainer
+  width: 80%
+
+.card
+  margin: 5% 0% 0%
+  height: 90%
+  .card-title
+    span
+      width: 85%
+      font-size: 1rem
+  .card-body
+    padding: 5%
+  .specialText
+    display: inline-block
+    font-size: xx-small
+    font-weight: 700
+  a
+    margin: 5%
+    color: #0069d2
+    font-weight: bold
+    opacity: 0
+
+.card:hover
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important
+  background-color: #fff!important
+  a
+    opacity: 1
+  a:hover
+    cursor: pointer
+    color: #0069d2
+
+.equipmentCards
+  .card
+    width: 50%
+    border: 0
+    margin: auto
+  .card-title
+    margin-bottom: .75rem
+
+h2
+  margin: 2%
+  color: #34383c
+
+footer
+  background-color: #2e3134
+  color: white
+  a
+    color: white !important
+
+ul
+  list-style: none
+  padding: 0
+  margin-top: 2%
+
+.desktopFooter
+  .secFooter
+    padding: 2% 0 0 0
+
+.mobileFooter
+  display: none
+
+.socialMedia
+  padding: 1%
+  border-top: thin solid #585a5d
+  border-bottom: thin solid #585a5d
+
+.mediaLinks
+  .col
+    display: flex
+    justify-content: space-evenly
+
+.firstSecFooter
+  .row
+    margin: 2%
+  .card
+    margin: 2% 0% 0%
+    background-color: #2e3134
+    border: 0
+    .card-header
+      border: 0
+      background: #2e3134
+      font-weight: bold
+    .card-body
+      padding: 0
+
+  .card:hover
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0) !important
+    background-color: #2e3134 !important
+
+@media (max-width: $layout-breakpoint-footer)
+  .mobileFooter
+    display: block !important
+
+  .desktopFooter
+    display: none !important
+
+.licAndLang
+  padding: 2%
+
+select
+  background: #2e3134
+  border: 0
+  color: white
+
+.legalStuff
+  display: flex
+  justify-content: space-evenly
